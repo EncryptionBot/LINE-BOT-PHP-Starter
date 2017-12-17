@@ -12,8 +12,12 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => $text
-			];
+                'text' => $text
+                
+            $messages = [
+                'type' => '1+1',
+                'text' => '2'
+
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
